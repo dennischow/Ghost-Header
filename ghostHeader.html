@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style type="text/css">
+    
+*, :before, :after {margin: 0; padding: 0; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+BODY {font-family: arial;}
+
+.siteHeader {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFD200;
+    visibility: visible;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.siteHeader h1 {
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    left: 15px; top: 23px;
+    
+}
+.siteHeader.off-screen {
+    top: -60px;
+    visibility: hidden;
+}
+.siteHeader.shadow {
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.content {
+    margin-top: 60px;
+    padding: 15px;
+}
+
+P {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.35em;
+}
+
+</style>
+</head>
+<body>
+    
+
+<div class="siteHeader">
+    <h1>Ghost Header</h1>
+</div>
+
+
+<div class="content">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam tellus, vestibulum a odio at, pulvinar pharetra est. In turpis sem, bibendum et lacus at, tempor lacinia ipsum. Ut id lacus libero. Phasellus porttitor sollicitudin ipsum, nec hendrerit sapien consectetur at. Donec est augue, laoreet tempus sem ac, efficitur tincidunt urna. Aliquam nulla libero, sodales a erat in, dictum blandit odio. Suspendisse mattis nisl ut porttitor porttitor. Vestibulum sem eros, iaculis a augue sed, gravida ullamcorper justo. Suspendisse sed elit quis neque vestibulum cursus. Aliquam consequat facilisis felis sit amet rutrum.
+
+    <p>In sagittis neque vel vehicula malesuada. Suspendisse tempus fringilla elit, ut posuere nulla aliquam in. Sed justo augue, hendrerit sit amet metus id, lobortis vulputate sem. Nullam dapibus suscipit felis, vitae rhoncus tortor. Pellentesque ut arcu in nulla luctus dignissim. Donec molestie porta nisi, sit amet vestibulum urna euismod sed. Nunc scelerisque, enim id tincidunt elementum, magna massa eleifend turpis, at facilisis justo mauris sit amet mauris.</p>
+
+    <p>Praesent a augue in ante imperdiet facilisis at in odio. Vivamus sit amet nisl est. Morbi ut turpis id orci rutrum ullamcorper quis vel justo. Ut imperdiet purus sit amet sollicitudin lobortis. Sed vehicula lacus nec justo feugiat dignissim. Nulla auctor, sapien quis dignissim iaculis, quam nibh gravida libero, nec commodo elit justo sit amet nisi. Pellentesque non arcu sed magna ultricies condimentum. Nulla convallis tempus enim, vitae rhoncus quam imperdiet sit amet.</p>
+
+    <p>Nulla pulvinar condimentum mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur laoreet condimentum turpis, a consectetur ligula blandit a. Morbi sed posuere lacus. Praesent quis nisi a nisi rhoncus sagittis nec et risus. Suspendisse aliquet, eros quis dictum porta, odio ipsum semper ligula, pulvinar euismod velit tortor et ligula. Quisque ultricies turpis ipsum, laoreet facilisis felis aliquet tincidunt. </p>
+
+    <p>Curabitur facilisis et arcu vulputate sagittis. Phasellus feugiat ut urna nec consectetur. Sed rhoncus, ex eu accumsan ultricies, mauris turpis ornare leo, sit amet porta massa nulla eu ex. Maecenas magna libero, vestibulum sit amet dolor et, varius tristique libero. Cras semper imperdiet enim sit amet convallis.</p>
+
+    <p>Cras id gravida ex. Curabitur sit amet metus volutpat, ornare sem quis, mattis nisl. Integer lacinia quam ut tellus faucibus, sit amet vulputate nunc condimentum. Duis tortor dui, interdum eu tempor imperdiet, dignissim vel tortor. Cras id lectus vitae sapien pharetra pellentesque quis id mauris. Ut ultricies lobortis elit, ut varius nisi pharetra porttitor. Aliquam dui justo, feugiat id dictum ac, auctor eget neque. Duis maximus molestie finibus.</p>
+
+    <p>Donec et nibh sed libero efficitur mattis ac vel erat. Aliquam accumsan ex convallis odio iaculis, mollis ultricies ligula sollicitudin. Morbi luctus nisi ac maximus dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum in elit iaculis, consectetur enim at, pellentesque sapien. Cras sit amet urna consectetur, auctor felis ut, fringilla nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ipsum eu nulla vehicula egestas ut sed sem. Vestibulum volutpat erat quis sem commodo, non interdum justo placerat. Mauris commodo massa orci, fermentum tincidunt augue consectetur eu. Proin tellus enim, consectetur dictum justo vitae, interdum viverra ante.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam tellus, vestibulum a odio at, pulvinar pharetra est. In turpis sem, bibendum et lacus at, tempor lacinia ipsum. Ut id lacus libero. Phasellus porttitor sollicitudin ipsum, nec hendrerit sapien consectetur at. Donec est augue, laoreet tempus sem ac, efficitur tincidunt urna. Aliquam nulla libero, sodales a erat in, dictum blandit odio. Suspendisse mattis nisl ut porttitor porttitor. Vestibulum sem eros, iaculis a augue sed, gravida ullamcorper justo. Suspendisse sed elit quis neque vestibulum cursus. Aliquam consequat facilisis felis sit amet rutrum.
+
+    <p>In sagittis neque vel vehicula malesuada. Suspendisse tempus fringilla elit, ut posuere nulla aliquam in. Sed justo augue, hendrerit sit amet metus id, lobortis vulputate sem. Nullam dapibus suscipit felis, vitae rhoncus tortor. Pellentesque ut arcu in nulla luctus dignissim. </p>
+
+    <p>Donec molestie porta nisi, sit amet vestibulum urna euismod sed. Nunc scelerisque, enim id tincidunt elementum, magna massa eleifend turpis, at facilisis justo mauris sit amet mauris. Praesent a augue in ante imperdiet facilisis at in odio. Vivamus sit amet nisl est. Morbi ut turpis id orci rutrum ullamcorper quis vel justo. Ut imperdiet purus sit amet sollicitudin lobortis. Sed vehicula lacus nec justo feugiat dignissim. Nulla auctor, sapien quis dignissim iaculis, quam nibh gravida libero, nec commodo elit justo sit amet nisi. Pellentesque non arcu sed magna ultricies condimentum. Nulla convallis tempus enim, vitae rhoncus quam imperdiet sit amet.</p>
+
+    <p>Nulla pulvinar condimentum mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur laoreet condimentum turpis, a consectetur ligula blandit a. Morbi sed posuere lacus. Praesent quis nisi a nisi rhoncus sagittis nec et risus. Suspendisse aliquet, eros quis dictum porta, odio ipsum semper ligula, pulvinar euismod velit tortor et ligula. Quisque ultricies turpis ipsum, laoreet facilisis felis aliquet tincidunt. Curabitur facilisis et arcu vulputate sagittis. Phasellus feugiat ut urna nec consectetur. Sed rhoncus, ex eu accumsan ultricies, mauris turpis ornare leo, sit amet porta massa nulla eu ex. Maecenas magna libero, vestibulum sit amet dolor et, varius tristique libero. Cras semper imperdiet enim sit amet convallis.
+
+    <p>Cras id gravida ex. Curabitur sit amet metus volutpat, ornare sem quis, mattis nisl. Integer lacinia quam ut tellus faucibus, sit amet vulputate nunc condimentum. Duis tortor dui, interdum eu tempor imperdiet, dignissim vel tortor. Cras id lectus vitae sapien pharetra pellentesque quis id mauris. Ut ultricies lobortis elit, ut varius nisi pharetra porttitor. Aliquam dui justo, feugiat id dictum ac, auctor eget neque. Duis maximus molestie finibus.</p>
+
+    <p>Donec et nibh sed libero efficitur mattis ac vel erat. Aliquam accumsan ex convallis odio iaculis, mollis ultricies ligula sollicitudin. Morbi luctus nisi ac maximus dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum in elit iaculis, consectetur enim at, pellentesque sapien. Cras sit amet urna consectetur, auctor felis ut, fringilla nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ipsum eu nulla vehicula egestas ut sed sem. Vestibulum volutpat erat quis sem commodo, non interdum justo placerat. Mauris commodo massa orci, fermentum tincidunt augue consectetur eu. Proin tellus enim, consectetur dictum justo vitae, interdum viverra ante.</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+    
+var winHeight = 0;
+var docHeight = 0;
+
+var winScrollDiff = 0;
+var winScrollLast = 0;
+var winScrollTop = 0;
+
+
+
+
+function windowDate(){
+    winScrollTop  = $(window).scrollTop();
+    winScrollDiff     = winScrollLast - winScrollTop;
+    winHeight         = $(window).height();
+    docHeight         = $(document).height();
+}
+
+$(document).on('ready',function(){
+    windowDate();
+    ghostHeader.init();
+});
+
+$(window).on('scroll',function(e){
+    windowDate();
+});
+
+
+var ghostHeader = {
+    root : null,
+    offet : null,
+    offetEnable : true,
+    debug : true,
+    shadow : true,
+    init : function(){
+        ghostHeader.root = $('.siteHeader');
+        ghostHeader.dependency();
+        ghostHeader.adjust();
+        ghostHeader.track();
+    },
+    dependency : function(){
+        if( ghostHeader.offetEnable ){
+            ghostHeader.offet = ghostHeader.root.height();
+        }else{
+            ghostHeader.offet = 0;
+        }
+
+        if( ghostHeader.shadow ){
+            ghostHeader.root.addClass('shadow');
+        }
+    },
+    adjust : function(){
+
+        if( winScrollTop <= 0 + ghostHeader.offet ){ // Reached Top
+
+            ghostHeader.root.removeClass('off-screen');
+            if( ghostHeader.debug ) console.log('Reached Top');
+
+        }else if( winScrollDiff > 0 && ghostHeader.root.hasClass('off-screen') ){ // Scrolling Up
+
+            ghostHeader.root.removeClass('off-screen');
+            if( ghostHeader.debug ) console.log('Scrolling Up');
+
+        }else if( winScrollDiff < 0 ){ // Scrolling Down
+
+            // Checking if reached the bottom
+            if( winScrollTop + winHeight >= docHeight && ghostHeader.root.hasClass('off-screen') ){
+
+                // When Finished Scroll + 500ms
+                if( ghostHeader.debug ) console.log('Reached Bottom - Execute in 300ms');
+
+                if(this.diffTrack) clearTimeout(this.diffTrack);
+                this.diffTrack = setTimeout(function() {
+                    ghostHeader.root.removeClass('off-screen'); 
+                    if( ghostHeader.debug ) console.log('Execute');
+                }, 300 );
+
+                // ghostHeader.root.removeClass('off-screen'); 
+                // if( ghostHeader.debug ) console.log('Reached Bottom');
+
+            }else{
+                
+                ghostHeader.root.addClass('off-screen');
+                if( ghostHeader.debug ) console.log('Scrolling Down');
+
+            }
+
+        }
+        
+        // Keep track and update the final scrolled number
+        winScrollLast = winScrollTop;
+
+    },
+    track : function(){
+        $(window).on('scroll',function(e){
+            ghostHeader.adjust();
+        });
+    }
+
+}
+
+</script>
+</body>
+</html>
