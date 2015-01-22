@@ -1,0 +1,145 @@
+/**, :before, :after {margin: 0; padding: 0; -o-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}*/
+BODY {background-color: #333; font-family: arial; font-size: 16px; overflow-x: hidden;}
+
+/* Bottom Snap Flash Styles */
+.bottom-snap-flash {
+    position: relative;
+}
+.bottom-snap-flash:after {
+    display: block;
+    content: '';
+    position: fixed;
+    left: 0; bottom: -10px;
+    width: 100%; height: 10px;
+    background-color: transparent;
+    -webkit-box-shadow: 0 0 10px #FFD200;
+    box-shadow: 0 0 10px #FFD200;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.bottom-snap-flash.bottom-snap-flash-on:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Ghost Header Styles */
+.ghost-header {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFD200;
+    visibility: hidden;
+    z-index: 10;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ghost-header-initialized {
+    visibility: visible;
+}
+.ghost-header-off-screen {
+    top: -60px;
+    visibility: hidden;
+}
+.ghost-header-shadow {
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+
+/* Elements Style */
+.container {
+    /*max-width: 800px;*/
+}
+A {
+    color: #FFD200;
+}
+A:hover,
+A:focus {
+    color: #CBA900;
+}
+.heading-title {
+    color: #FFD200;
+}
+
+#header h1 {
+    position: absolute;
+    left: 15px; top: 15px;
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+#footer {
+    background-color: black;
+}
+#footer P {
+    margin: 0;
+    padding: 10px 0;
+    color: #999;
+    text-align: center;
+}
+
+#main-container {
+    margin-top: 100px;
+    color: #CCC;
+}
+
+.btn-yellow, 
+.btn-yellow:hover, 
+.btn-yellow:focus, 
+.btn-yellow:active {
+    background-color: #FFD200;
+    border: 1px #FFD200 solid;
+    color: white;
+}
+
+.featrue {
+    margin-bottom: 20px;
+    background-color: #666;
+    background-image: url(../images/texture.png);
+}
+
+.featrue H1 {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.featrue P {
+    color: #EEE;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.earthquake {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.6s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
